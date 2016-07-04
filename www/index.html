@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/promise-polyfill/promise.js"></script>
+    <script type="text/javascript" src="lib/bleat/dist/bluetooth.helpers.js"></script>
+    <script type="text/javascript" src="lib/bleat/dist/api.web-bluetooth.js"></script>
+    <script type="text/javascript" src="lib/bleat/dist/adapter.evothings.js"></script>
+    <script type="text/javascript" src="lib/rollingspider-webbluetooth/minidrone.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <title>Drone Controller</title>
+  </head>
+  <body>
+    <button id="connect">connect</button>
+    <button id="disconnect">disconnect</button>
+    <button id="takeoff">take off</button>
+    <button id="hover">hover</button>
+    <button id="upward">upward</button>
+    <button id="downward">downward</button>
+    <button id="forward">forward</button>
+    <button id="backward">backward</button>
+    <button id="rightward">rightward</button>
+    <button id="leftward">leftward</button>
+    <button id="turnleft">turn left</button>
+    <button id="turnright">turn right</button>
+    <button id="frontflip">front flip</button>
+    <button id="backflip">back flip</button>
+    <button id="leftflip">right flip</button>
+    <button id="rightflip">left flip</button>
+    <button id="land">land</button>
+    <button id="emergencyland">emergency land</button>
+  </body>
+</html>

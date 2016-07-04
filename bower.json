@@ -1,0 +1,9 @@
+{
+  "name": "drone-app",
+  "dependencies": {
+    "bleat": "^0.1.1",
+    "rollingspider-webbluetooth": "^0.0.2",
+    "promise-polyfill": "^5.2.1"
+  },
+  "private": true
+}

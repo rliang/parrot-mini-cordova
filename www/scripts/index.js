@@ -40,7 +40,12 @@ function turnLeft() {
 }
 
 function onLoad() {
-  document.getElementById('connect').onclick = drone.connect.bind(drone, navigator.bluetooth || bleat);
+  document.getElementById('connect').onclick = function() {
+    drone.connect(navigator.bluetooth || bleat)
+      .catch(function(e) {
+        alert("error " + e);
+      });
+  };
   document.getElementById('disconnect').onclick = drone.disconnect;
   document.getElementById('takeoff').onclick = drone.takeOff;
   document.getElementById('land').onclick = drone.land;

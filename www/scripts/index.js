@@ -41,18 +41,10 @@ function turnLeft() {
 
 function onLoad() {
   document.getElementById('connect').onclick = function() {
-    drone.connect(navigator.bluetooth || bleat)
-      .catch(function(e) {
-        alert("error " + e);
-      });
+    drone.connect(navigator.bluetooth || bleat);
   };
   document.getElementById('disconnect').onclick = drone.disconnect;
-  document.getElementById('takeoff').onclick = function() {
-    drone.takeOff()
-      .catch(function(e) {
-        alert("error " + e);
-      });
-  };
+  document.getElementById('takeoff').onclick = drone.takeOff;
   document.getElementById('land').onclick = drone.land;
   document.getElementById('hover').onclick = drone.hover;
   document.getElementById('backflip').onclick = drone.backFlip;

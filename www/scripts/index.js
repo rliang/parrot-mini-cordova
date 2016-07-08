@@ -47,7 +47,12 @@ function onLoad() {
       });
   };
   document.getElementById('disconnect').onclick = drone.disconnect;
-  document.getElementById('takeoff').onclick = drone.takeOff;
+  document.getElementById('takeoff').onclick = function() {
+    drone.takeOff()
+      .catch(function(e) {
+        alert("error " + e);
+      });
+  };
   document.getElementById('land').onclick = drone.land;
   document.getElementById('hover').onclick = drone.hover;
   document.getElementById('backflip').onclick = drone.backFlip;
